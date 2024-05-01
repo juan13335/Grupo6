@@ -1,0 +1,26 @@
+/* Fuente titulo */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+#contenedor{
+	background-color: #e2e2e2;
+}
+
+.nav{
+	font-family: "Playfair Display", serif;
+	color: #111a35;
+	font-optical-sizing: auto;
+	font-weight:550;
+	font-style: normal;
+	text-decoration:none;
+	} 
+
+ul#menu{
+	margin:0;
+	padding: 10px 10px 30px 10px;	
+	}
+	
+ul#menu li{ 
+	display:inline-flex;
+	float:right;
+	padding:0 10px;	
+	}
