@@ -5,6 +5,7 @@
 	background-color: #e2e2e2;
 	font-family: "Playfair Display", serif;
 	box-sizing: border-box;
+	padding: 0px;
 }
 
 .nav{
@@ -48,15 +49,22 @@
 	margin: 5px;
 }
 
+
 .n1 {
 	grid-area: principal;
-	
+	max-width: 100%;
 }
 
 .n2 {
+	max-width: 100%;
 	grid-area: noticia2;
 }
 
 .n3 {
+	max-width: 100%;
 	grid-area: noticia3;
+}
+
+.box h4, p {
+	margin: 10px 15px;
 }
