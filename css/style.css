@@ -49,10 +49,18 @@
 	margin: 5px;
 }
 
+.box h4, p{
+	margin: 10px 15px;
+}
 
 .n1 {
 	grid-area: principal;
 	max-width: 100%;
+}
+
+.n1 img {
+	height: 250px;
+	margin: 10px 15px;
 }
 
 .n2 {
@@ -65,6 +73,3 @@
 	grid-area: noticia3;
 }
 
-.box h4, p {
-	margin: 10px 15px;
-}
