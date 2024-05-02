@@ -1,26 +1,62 @@
 /* Fuente titulo */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-#contenedor{
+* {
 	background-color: #e2e2e2;
+	font-family: "Playfair Display", serif;
+	box-sizing: border-box;
 }
 
 .nav{
-	font-family: "Playfair Display", serif;
-	color: #111a35;
 	font-optical-sizing: auto;
-	font-weight:550;
+	font-weight: 550;
 	font-style: normal;
-	text-decoration:none;
 	} 
 
-ul#menu{
+.nav a{
+	text-decoration: none;
+	color: #05070e;
+}
+
+.contenedor ul{
 	margin:0;
 	padding: 10px 10px 30px 10px;	
 	}
 	
-ul#menu li{ 
+.nav li{ 
 	display:inline-flex;
 	float:right;
 	padding:0 10px;	
 	}
+
+.grid-container {
+	display: grid;
+	width: 80%;
+	grid-template-areas: 
+	'principal noticia2'
+	'principal noticia3';
+	margin: 30px auto;
+	padding: 20px;
+	border: 1px solid black;
+	justify-content: stretch;
+}
+
+.box{
+	border: 1px solid black;
+	text-align: justify;
+	line-height: 25px;
+	margin: 5px;
+}
+
+.n1 {
+	grid-area: principal;
+	
+}
+
+.n2 {
+	grid-area: noticia2;
+}
+
+.n3 {
+	grid-area: noticia3;
+}
