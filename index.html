@@ -21,21 +21,60 @@
         </div>        
     </header>
     <main>
+        <div class="carousel">
+
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="slides">
+              <!-- <img src="/img/carosuel1.png" alt="Imagen 1 carousel"> -->
+              <img src="/img/carousel2.png" alt="Imagen 2 carousel">
+              <img src="/img/carousel3.png" alt="Imagen 3 carousel">
+              <img src="/img/carousel4.png" alt="Imagen 3 carousel">
+              <img src="/img/carousel5.png" alt="Imagen 3 carousel">
+            </div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+            <div class="overlay">
+              <a href="/sitio/publicidad.html" class="ad-link">CONOCÉ ARGENTINA</a>
+            </div>
+
+        </div>
+
+        <div class="dolar-container">
+            <div class="dolar-info">
+              <div class="dolar-label">
+              <p>COTIZACIÓN DEL DÓLAR</p>
+              </div>  
+              <div class="dolar-price" id="blue">
+                <p>Dólar Blue: $1020,00</p> 
+              </div>
+              <div class="dolar-price" id="mep">
+                <p>Dólar MEP: $1069,02</p> 
+              </div>
+            </div>
+        </div>
+
         <div class="grid-container">
             <div class="box n1">
-                <h4>Notica del dia</h4>
+                <h4>Noticia del dia</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate animi voluptatibus, rem iure velit magni nobis, ratione harum magnam aspernatur minima porro non optio error cumque assumenda. Porro, fuga?</p>
                 <img src="./img/venta-de-autos-chocados-de-aseguradoras.jpg" alt="choque de autos">
+                <a href="" class="leer-mas">Leer más</a>
             </div>
             <div class="box n2">
                 <h4>Noticia</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore modi magnam quis natus ad fuga minima harum maxime eveniet quos. Doloribus, at? Nam labore vero, iure vitae distinctio voluptates veniam.</p>
+                <a href="" class="leer-mas">Leer más</a>
             </div>
             <div class="box n3">
                 <h4>Noticia</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi nobis asperiores modi nemo eveniet voluptate tempora autem ratione amet consequuntur debitis, repudiandae omnis fugiat illo accusamus eius, quibusdam vero. Aut!</p>
+                <a href="" class="leer-mas">Leer más</a>
             </div>
         </div>
     </main>
+
+    <script src="/js/script.js"></script>
+
 </body>
 </html>
