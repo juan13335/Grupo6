@@ -9,6 +9,10 @@
 
 }
 
+body {
+	background-color: #e2e2e2;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -35,8 +39,13 @@ header .h2-nav {
 .header .nav a {
 	text-decoration: none;
 	color: black;
-	font-size: 105%;
+	font-size: 115%;
 	color:aliceblue;
+	cursor: pointer;
+}
+
+.header .nav a:hover {
+	color: red;
 }
 
 .grid-container {
@@ -45,40 +54,56 @@ header .h2-nav {
 	grid-template-areas: 
 	'principal noticia2'
 	'principal noticia3';
-	margin: 30px auto;
+	margin: 15px 5px;
 	padding: 20px;
-	border: 1px solid black;
-	/* justify-content: stretch; */
-	text-align: center;
-    justify-content: center; /* Alinea horizontalmente */
-	
+	text-align: left;
 }
 
 .box{
 	border: 1px solid black;
-	/* text-align: justify; */
 	line-height: 20px;
 	margin: 5px;
-	align-items: center;
-	text-align: center;
-	
-	
+	background-color: white;
+	border-radius: 2px;
 }
 
-.box h4, p{
+.box h2 {
+	font-size: 25px;
+}
+
+.box h2, p{
 	margin: 10px 15px;
+	padding: 10px 10px;
 	text-align: justify;
+}
+
+.box img {
+	max-width: 320px;
+	float: right;
+	margin: 80px 15px 10px 15px;
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	height: 30px;
+	padding: 1px;
+	font-size: 15px;
+	background-color: #4862FF;
+	width: 80px;
+	cursor: pointer;
+	border: 1px solid #0024FA;
+	margin: 10px 25px;
+}
+
+.btn:hover {
+	background-color: #6B80FF;
 }
 
 .n1 {
 	grid-area: principal;
 	max-width: 100%;
 	align-items: center;  /* porque no se alinea al centro?? */
-}
-
-.n1 img {
-	height: 250px;
-	margin: 10px 15px;
 }
 
 .n2 {
@@ -90,29 +115,6 @@ header .h2-nav {
 	max-width: 100%;
 	grid-area: noticia3;
 }
-
-p {
-    margin: 1%;
-}
-
-/* botones leer más*/
-.leer-mas button {
-	display: flex;
-	width: 50%;
-	align-self: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding: 8px;
-	background-color:#111a35;
-	color: white;
-	text-decoration: none;
-	border-radius: 2px;
-	position: relative;
-}
-  
-.leer-mas:hover {
-	background-color: #76777c;
- }
 
 
 /* CAROUSEL */
