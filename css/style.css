@@ -154,7 +154,7 @@ p {
 	right: 0;
 }
 
- .overlay {  /*texto concé argentina */
+.overlay {  /*texto concé argentina */
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -169,6 +169,9 @@ p {
 	padding: 10px 20px;
 	background-color: rgba(77, 77, 77, 0);
 }
+
+
+
 
 /* dolar container */
 
@@ -203,12 +206,12 @@ p {
 /* videos index */
 
 .video-section {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-	/* margin:3%; */
-	padding:2%;
+	padding:5%;
 	background-color: #e2e2e2;
+	text-align: left;
 }
 
 .video-section .h1{
@@ -217,8 +220,7 @@ p {
 
 .video-container {
     margin: 3%; /* Espacio entre los videos */
-    /* overflow: hidden; */
-    /* padding-top: 0; Proporción 16:9 para el contenedor del video */
+    
 }
 
 .video-container .video-section  {
@@ -293,4 +295,73 @@ p {
 
 .logo-redes{
 	padding: 3%; /* Espacio entre logos */
+}
+
+/* Puntos de corte */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    header {
+        height: 5.5rem;
+		display: flex;
+        justify-content: space-between;
+		position:relative;
+		padding: 5%;
+    } 
+
+	nav{
+        font-size: small;
+	} 
+	
+    body {
+        align-items: center;
+    }
+
+	main .carousel .overlay{
+		font-size: small;
+	}
+
+	.dolar-container .dolar-label{
+		display: none;
+	}
+
+	.dolar-container .dolar-info{
+		font-size: small;
+		height: 1.5rem;
+		text-align: center;
+	}
+
+	.video-section .h1{
+		text-align: center;
+
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) {
+
+	.header{
+		display: flex;
+		margin: 0%;
+		padding: 0%;
+
+	}
+
+	main .carousel .overlay{
+		text-align: center;
+	}
+
+	.video-section{
+		display:inline;
+		text-align: center;
+		padding: 7%;	
+	}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    header {
+        height: 5.5rem;
+    } 
 }
