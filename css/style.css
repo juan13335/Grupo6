@@ -102,8 +102,7 @@ header .h2-nav {
 
 .n1 {
 	grid-area: principal;
-	max-width: 100%;
-	align-items: center;  /* porque no se alinea al centro?? */
+	max-width: 100%;  /* porque no se alinea al centro?? */
 }
 
 .n2 {
