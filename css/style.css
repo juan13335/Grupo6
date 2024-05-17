@@ -366,3 +366,87 @@ header .h2-nav {
         height: 5.5rem;
     } 
 }
+
+/* PAGINA CONTACTO */
+form > h2{
+	text-align:center;
+	text-shadow: 3px 2px 1px #40f3db;
+	font-size: 3em;
+}
+
+.fila{
+	display: flex;
+	justify-content: center;
+}
+
+.columna{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:stretch;
+	padding:0em 1em 0em;
+	/* background-color: #e2e2e2; */
+}
+
+.form-input{
+	margin:10px 10px 0px 10px;
+}
+
+.form-input > label{
+	display: block;
+	margin: 0px 10px 0px 10px;
+	font-size:1.8em;
+}
+
+.form-input > input{
+	width: 85%;
+	height: 30px;
+	font-size: 1em;
+	margin: 0px 10px 0px 10px;
+}
+
+
+.form-check legend{
+	margin:20px 0px 0px 5px;
+	font-size: 2em;
+	/* font-weight: bold; */
+	}
+
+.form-check > label {
+		margin:5px;
+		font-size:1.5em;
+		padding: 5px;
+	}
+	
+.form-check{
+		display:inline-flexbox;
+		flex-wrap: wrap;
+		justify-content:center;
+		/* align-items:stretch; */
+	}
+	
+.form-msg{	
+	font-size:1.5em;
+	margin:20px 0px 0px 5px;
+}
+
+textarea{
+	width: 100%;
+	justify-content:center;
+	resize:none;
+	height: 100px;
+}
+
+.fila button{
+	margin:10;
+	font-size:1.5em;
+	font-weight: bold;
+	padding: 0.2em 0.2em ;
+	box-shadow: 2px 2px 1px #000;
+	color:#111a35;
+}
+
+.fila button:hover {
+	background-color: #111a35;
+	color: #e2e2e2;
+}
