@@ -24,6 +24,7 @@
 
 header .h2-nav {
 	font-size: 20px;
+	padding: 2%;
 }
 
 .header .nav li {
@@ -359,9 +360,9 @@ p {
 
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px and up) 
 @media only screen and (min-width: 992px) {
     header {
         height: 5.5rem;
     } 
-}
+}*/
