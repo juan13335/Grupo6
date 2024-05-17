@@ -449,3 +449,16 @@ textarea{
 	background-color: #111a35;
 	color: #e2e2e2;
 }
+
+@media screen and (max-width:600px){
+	.fila{
+		flex-direction: column;
+		background-color: #4862FF;
+		text-align:center;
+		text-shadow: 2px 1px 1px #40f3db;
+		/* font-size: 3em; */
+		}
+	.form-h2{
+		font-size:2em;
+	}
+	}
