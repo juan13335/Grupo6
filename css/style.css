@@ -395,16 +395,15 @@ form > h2{
 .form-input > label{
 	display: block;
 	margin: 0px 10px 0px 10px;
-	font-size:1.8em;
+	font-size:1.6em;
 }
 
 .form-input > input{
-	width: 85%;
+	width: 100%;
 	height: 30px;
 	font-size: 1em;
 	margin: 0px 10px 0px 10px;
 }
-
 
 .form-check legend{
 	margin:20px 0px 0px 5px;
@@ -413,15 +412,15 @@ form > h2{
 	}
 
 .form-check > label {
-		margin:5px;
-		font-size:1.5em;
-		padding: 5px;
+	margin:5px;
+	font: size 1.2em;
+	padding: 5px;
 	}
 	
 .form-check{
-		display:inline-flexbox;
-		flex-wrap: wrap;
-		justify-content:center;
+	display:inline-flexbox;
+	flex-wrap: wrap;
+	justify-content:center;
 		/* align-items:stretch; */
 	}
 	
@@ -438,10 +437,10 @@ textarea{
 }
 
 .fila button{
-	margin:10;
+	margin-bottom: 20px;
 	font-size:1.5em;
 	font-weight: bold;
-	padding: 0.2em 0.2em ;
+	padding: 0.2em 0.2em;
 	box-shadow: 2px 2px 1px #000;
 	color:#111a35;
 }
