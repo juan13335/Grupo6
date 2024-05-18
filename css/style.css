@@ -89,11 +89,13 @@ header .h2-nav {
 	height: 30px;
 	padding: 1px;
 	font-size: 15px;
-	background-color: #4862FF;
+	/* background-color: #4862FF; */
+	background-color: #aeb9fa;
 	width: 80px;
 	cursor: pointer;
 	border: 1px solid #0024FA;
 	margin: 10px 26px;
+	align-items: center;
 }
 
 .btn:hover {
@@ -182,7 +184,7 @@ header .h2-nav {
 	display: flex;
 	padding: 5px;
 	font-size: 1.5rem;
-	background-color: #e2e2e2;
+	background-color: #76777c;
 
 }
   
@@ -190,6 +192,7 @@ header .h2-nav {
 	flex-grow: 1;
 	display: flex;
 	padding: 5px;
+	color:#e2e2e2
 }
   
 .dolar-price {
@@ -213,6 +216,7 @@ header .h2-nav {
 	background-color: #e2e2e2;
 	text-align: left;
 	margin: 20px;
+	font-size: 2rem;
 }
 
 .video-section .h1{
@@ -228,7 +232,7 @@ header .h2-nav {
     position: absolute;
     width: 100%;
     height: 100%;
-	margin: 3%;
+	margin: 4%;
 } 
 
 
@@ -322,8 +326,8 @@ header .h2-nav {
         align-items: center;
     }
 
-	main .carousel .overlay{
-		font-size: small;
+	.overlay{
+		font-size:x-small;
 	}
 
 	.dolar-container .dolar-label{
@@ -332,7 +336,7 @@ header .h2-nav {
 
 	.dolar-container .dolar-info{
 		font-size: small;
-		height: 1.5rem;
+		/* height: 1.5rem; */
 		text-align: center;
 	}
 
@@ -393,8 +397,9 @@ header .h2-nav {
 /* PAGINA CONTACTO */
 form > h2{
 	text-align:center;
-	text-shadow: 3px 2px 1px #40f3db;
-	font-size: 3em;
+	text-shadow: 3px 2px 1px #ffffff;
+	font-size: 2.2em;
+	padding:2%;
 }
 
 .fila{
