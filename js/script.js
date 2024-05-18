@@ -25,3 +25,6 @@ function prevSlide() {
 
 showSlides();
 setInterval(nextSlide, 3000); // Cambia la imagen cada 3 segundos
+
+// secciones
+
