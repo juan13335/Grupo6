@@ -26,17 +26,17 @@ body {
 }
 
 
-header .h2-nav {
+.h2-nav {
 	font-size: 20px;
 }
 
-.header .nav li {
+.nav li {
 	display: inline-block;
 	padding: 0 20px;
-	
+	position: relative;
 }
 
-.header .nav a {
+.nav a {
 	text-decoration: none;
 	color: black;
 	font-size: 115%;
@@ -44,8 +44,26 @@ header .h2-nav {
 	cursor: pointer;
 }
 
-.header .nav a:hover {
+.nav a:hover {
 	color: red;
+}
+
+.nav li:hover ul {
+	display: block;
+}
+
+.nav ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #111a35;
+	z-index: 1;
+}
+
+.nav ul li {
+	padding: 15px 10px 7.5px 20px;
+	font-size: 80%;
 }
 
 .grid-container {
