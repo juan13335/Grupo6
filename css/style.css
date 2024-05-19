@@ -136,6 +136,12 @@ body {
 	grid-area: noticia3;
 }
 
+/* ERROR */
+
+.bsod-container{
+	padding: 3%;
+
+}
 
 /* CAROUSEL */
 .carousel {
@@ -411,11 +417,9 @@ body {
     header {
         height: 5.5rem;
     } 
-}*/
     /*header { 
         height: 5.5rem; Pienso que no es necesario
     }*/ 
-}
 
 /* PAGINA CONTACTO */
 form > h2{
