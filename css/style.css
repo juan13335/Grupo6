@@ -22,7 +22,7 @@ body {
 	border-color: black;
 	background-color: #111a35;
 	color:aliceblue;
-	padding:2%;
+	/* padding:1%; */
 }
 
 
@@ -37,6 +37,15 @@ body {
 	position: relative;
 }
 
+
+header nav ul li a{
+	padding: 8px;
+}
+
+header nav ul li a:hover{
+	background-color: #e2e2e2;
+}
+
 .nav a {
 	text-decoration: none;
 	color: black;
@@ -46,7 +55,7 @@ body {
 }
 
 .nav a:hover {
-	color: red;
+	color: rgb(64, 0, 255);
 }
 
 .nav li:hover ul {
@@ -331,14 +340,21 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-    /*header { Anterior NAV
-        height: 5.5rem;
-		display: flex;
-        justify-content: space-between;
-		position:relative;
+    /* header nav { 
+		width: 80%;
+		height: 100%;
+		margin: 0;
+		position:fixed;
 		padding: 5%;
-    }*/
+		left: -100%;
+    } */
 
+	/* header nav ul li{
+		display: block;
+		float: none;
+	} */
+
+	
 	.nav-public {
 		padding: 3%;
 	}
