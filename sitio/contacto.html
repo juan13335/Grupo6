@@ -3,9 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">    
+    <link rel="icon" type="image/x-icon" href="/img/megafono.png">
     <title>Formulario Contacto</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="h2-nav">
+            <h2>NoticiasYA!</h2>
+        </div>
+        <nav>
+            <ul class = "nav">
+                <li ><a href="#">Contacto</a></li>
+                <li ><a href="./sitio/secciones.html">Secciones</a></li>
+            </ul>   
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <form action="">
+                <h2 class="form-h2">Suscribite y recibí contenido exclusivo</h2>
+                <div class="fila">
+                    <div class="columna">
+                        <div class="form-input">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre"  placeholder="Ingresa tu nombre" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="nombre"  placeholder="Ingresa tu apellido" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="phone">Telefono:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Ingresa tu n° telefónico">          
+                        </div>
+                        <div class="form-input">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Ingresa tu dirección" required>
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <fieldset class="form-check">
+                           <legend>"Temas de Interés"</legend>
+                           <input type="checkbox" id="politica" name="interes[]" value="politica">
+                           <label for="politica">Política</label>
+                           <input type="checkbox" id="cultura" name="interes[]" value="cultura">
+                           <label for="cultura">Cultura</label>
+                           <input type="checkbox" id="actualidad" name="interes[]" value="actualidad">
+                           <label for="actualidad">Actualidad</label>
+                           <input type="checkbox" id="turismo" name="interes[]" value="turismo"><br>
+                           <label for="turismo">Turismo</label>
+                           <input type="checkbox" id="deporte" name="interes[]" value="deporte">
+                           <label for="deporte">Deporte</label>
+                           <input type="checkbox" id="salud" name="interes[]" value="salud">
+                           <label for="salud">Salud</label>
+                        </fieldset>
+                        <div class="form-msg">
+                           <label for="comentario">Deja tus comentarios aquí:</label>        
+                           <textarea id="mensaje" name="mensaje" cols="40" rows="7" ></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="fila">
+                    <button id="submit">ENVIAR</button>
+                </div>                
+            </form>
+        </section>
+    </main>
+    <footer class="color-footer">
+        <p class ="p-footer">Todos los derechos reservados NoticiasYA! - 2024</p>
+        <p class ="p-footer"><a href="../index.html">Volver al inicio</a></p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

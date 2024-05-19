@@ -9,6 +9,10 @@
 
 }
 
+body {
+	background-color: #e2e2e2;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -22,22 +26,45 @@
 }
 
 
-header .h2-nav {
+.h2-nav {
 	font-size: 20px;
 	padding: 2%;
 }
 
-.header .nav li {
+.nav li {
 	display: inline-block;
 	padding: 0 20px;
-	
+	position: relative;
 }
 
-.header .nav a {
+.nav a {
 	text-decoration: none;
 	color: black;
-	font-size: 105%;
+	font-size: 115%;
 	color:aliceblue;
+	cursor: pointer;
+}
+
+.nav a:hover {
+	color: red;
+}
+
+.nav li:hover ul {
+	display: block;
+}
+
+.nav ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #111a35;
+	z-index: 1;
+}
+
+.nav ul li {
+	padding: 15px 10px 7.5px 20px;
+	font-size: 80%;
 }
 
 .grid-container {
@@ -46,40 +73,57 @@ header .h2-nav {
 	grid-template-areas: 
 	'principal noticia2'
 	'principal noticia3';
-	margin: 30px auto;
+	margin: 15px 5px;
 	padding: 20px;
-	border: 1px solid black;
-	/* justify-content: stretch; */
-	text-align: center;
-    justify-content: center; /* Alinea horizontalmente */
-	
+	text-align: left;
 }
 
 .box{
 	border: 1px solid black;
-	/* text-align: justify; */
 	line-height: 20px;
 	margin: 5px;
-	align-items: center;
-	text-align: center;
-	
-	
+	background-color: white;
+	border-radius: 4px;
 }
 
-.box h4, p{
+.box h2 {
+	font-size: 25px;
+}
+
+.box h2, p{
 	margin: 10px 15px;
+	padding: 10px 10px;
 	text-align: justify;
+}
+
+.box img {
+	max-width: 320px;
+	float: right;
+	margin: 80px 15px 10px 15px;
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	height: 30px;
+	padding: 1px;
+	font-size: 15px;
+	/* background-color: #4862FF; */
+	background-color: #aeb9fa;
+	width: 80px;
+	cursor: pointer;
+	border: 1px solid #0024FA;
+	margin: 10px 26px;
+	align-items: center;
+}
+
+.btn:hover {
+	background-color: #6B80FF;
 }
 
 .n1 {
 	grid-area: principal;
-	max-width: 100%;
-	align-items: center;  /* porque no se alinea al centro?? */
-}
-
-.n1 img {
-	height: 250px;
-	margin: 10px 15px;
+	max-width: 100%;  /* porque no se alinea al centro?? */
 }
 
 .n2 {
@@ -91,29 +135,6 @@ header .h2-nav {
 	max-width: 100%;
 	grid-area: noticia3;
 }
-
-p {
-    margin: 1%;
-}
-
-/* botones leer más*/
-.leer-mas button {
-	display: flex;
-	width: 50%;
-	align-self: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding: 8px;
-	background-color:#111a35;
-	color: white;
-	text-decoration: none;
-	border-radius: 2px;
-	position: relative;
-}
-  
-.leer-mas:hover {
-	background-color: #76777c;
- }
 
 
 /* CAROUSEL */
@@ -182,7 +203,7 @@ p {
 	display: flex;
 	padding: 5px;
 	font-size: 1.5rem;
-	background-color: #e2e2e2;
+	background-color: #76777c;
 
 }
   
@@ -190,6 +211,7 @@ p {
 	flex-grow: 1;
 	display: flex;
 	padding: 5px;
+	color:#e2e2e2
 }
   
 .dolar-price {
@@ -210,9 +232,10 @@ p {
     display:flex;
     justify-content: center;
     align-items: center;
-	padding:5%;
 	background-color: #e2e2e2;
 	text-align: left;
+	margin: 20px;
+	font-size: 2rem;
 }
 
 .video-section .h1{
@@ -228,7 +251,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-	margin: 3%;
+	margin: 4%;
 } 
 
 
@@ -302,13 +325,17 @@ p {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-    header {
+    /*header { Anterior NAV
         height: 5.5rem;
 		display: flex;
         justify-content: space-between;
 		position:relative;
 		padding: 5%;
-    } 
+    }*/
+
+	.nav-public {
+		padding: 3%;
+	}
 
 	nav{
         font-size: small;
@@ -318,8 +345,8 @@ p {
         align-items: center;
     }
 
-	main .carousel .overlay{
-		font-size: small;
+	.overlay{
+		font-size:x-small;
 	}
 
 	.dolar-container .dolar-label{
@@ -328,24 +355,36 @@ p {
 
 	.dolar-container .dolar-info{
 		font-size: small;
-		height: 1.5rem;
+		/* height: 1.5rem; */
 		text-align: center;
 	}
 
-	.video-section .h1{
+	.video-section h1{
 		text-align: center;
+		font-size: 30px;
+	}
 
+	.video-section{
+		display: inline;
+    	text-align: center;
+    	height: 350px;
+    	width: 400px;
+    	margin: 20px 10px;	
+	}
+
+	.grid-container {
+		grid-template-areas: 
+	'principal'
+	'noticia2'
+	'noticia3';
 	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width:900px) {
 
 	.header{
 		display: flex;
-		margin: 0%;
-		padding: 0%;
-
 	}
 
 	main .carousel .overlay{
@@ -353,11 +392,18 @@ p {
 	}
 
 	.video-section{
-		display:inline;
-		text-align: center;
-		padding: 7%;	
+		display: inline;
+    	text-align: center;
+    	height: 350px;
+    	width: 400px;
+    	margin: 20px 10px;	
 	}
-
+	.grid-container {
+		grid-template-areas: 
+	'principal'
+	'noticia2'
+	'noticia3';
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) 
@@ -366,3 +412,104 @@ p {
         height: 5.5rem;
     } 
 }*/
+    /*header { 
+        height: 5.5rem; Pienso que no es necesario
+    }*/ 
+}
+
+/* PAGINA CONTACTO */
+form > h2{
+	text-align:center;
+	text-shadow: 3px 2px 1px #ffffff;
+	font-size: 2.2em;
+	padding:2%;
+}
+
+.fila{
+	display: flex;
+	justify-content: center;
+}
+
+.columna{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:stretch;
+	padding:0em 1em 0em;
+	/* background-color: #e2e2e2; */
+}
+
+.form-input{
+	margin:10px 10px 0px 10px;
+}
+
+.form-input > label{
+	display: block;
+	margin: 0px 10px 0px 10px;
+	font-size:1.6em;
+}
+
+.form-input > input{
+	width: 100%;
+	height: 30px;
+	font-size: 1em;
+	margin: 0px 10px 0px 10px;
+}
+
+.form-check legend{
+	margin:20px 0px 0px 5px;
+	font-size: 2em;
+	/* font-weight: bold; */
+	}
+
+.form-check > label {
+	margin:5px;
+	font: size 1.2em;
+	padding: 5px;
+	}
+	
+.form-check{
+	display:inline-flexbox;
+	flex-wrap: wrap;
+	justify-content:center;
+		/* align-items:stretch; */
+	}
+	
+.form-msg{	
+	font-size:1.5em;
+	margin:20px 0px 0px 5px;
+}
+
+textarea{
+	width: 100%;
+	justify-content:center;
+	resize:none;
+	height: 100px;
+}
+
+.fila button{
+	margin-bottom: 20px;
+	font-size:1.5em;
+	font-weight: bold;
+	padding: 0.2em 0.2em;
+	box-shadow: 2px 2px 1px #000;
+	color:#111a35;
+}
+
+.fila button:hover {
+	background-color: #111a35;
+	color: #e2e2e2;
+}
+
+@media screen and (max-width:600px){
+	.fila{
+		flex-direction: column;
+		background-color: #4862FF;
+		text-align:center;
+		text-shadow: 2px 1px 1px #40f3db;
+		/* font-size: 3em; */
+		}
+	.form-h2{
+		font-size:2em;
+	}
+	}
