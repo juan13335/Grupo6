@@ -60,3 +60,17 @@ function validaEmail(){
              validaEmail();
       evento.preventDefault();
   })
+
+
+// const form = document.querySelector('#formEnvio');
+// const span_cb = document.getElementById('cb_validation');
+// let mensaje = document.querySelector('#rtaForm');
+
+// form.addEventListener('submit', e => {
+//   const cb = document.querySelectorAll('#intereses label input:checked');
+//   if(cb.length < 2){
+//     span_cb.innerHTML = `Se requiere un mínimo de 2 elementos, has elegido ${cb.length}`;
+//     e.preventDefault( );
+//   }
+// })
+
