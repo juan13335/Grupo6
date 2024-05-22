@@ -25,52 +25,60 @@ function prevSlide() {
 
 showSlides();
 setInterval(nextSlide, 3000); // Cambia la imagen cada 3 segundos
-
 // contacto.html
-function validaEmail(){
+  function validarForm(){
+    let nombre = document.querySelector('#nombre').value;
+    let apellido = document.querySelector('#apellido').value;
+    let email = document.querySelector('#email').value;
+
+    let soloPalabras = /^[a-z\s]+$/i; // Expresion regular
+
+    let correo= /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+
+    let vale=true //prueba  
+    let msgError= 'Datos Incorrecto:  ';
+
+  //    Campos de texto
+    if(nombre === ''){
+      if (!soloPalabras.test(nombre)) {
+      vale=false; 
+      msgError += 'nombre'
+      
+    }  
+    if(apellido === ""){
+      if (!soloPalabras.test(apellido)) {
+      vale=false; 
+      msgError += 'apellido'
     
-  let nombre = document.querySelector('#nombre').value;
-  let email = document.querySelector('#email').value;    
-  // let soloPalabras = /^[a-z\s]+$/i;
-  // console.log(soloPalabras.test('jozze'));
-  let prueba = true;
-  let msgError ='Datos incorrectos  ';
-  
-  if( nombre === ''){
-      prueba = false;
-      msgError += ' nombre' ; 
-  }
-  
-  if(email === ''){
-      prueba = false;
-      msgError += ' email';
-  }
-  
-  if(prueba){
-      console.log('Suscripcion Realizada!!')
-  }else{
+    }
+
+    if(email === ""){
+      if (!corre.test(email)) {
+      vale=false; 
+      msgError += 'apellido'
+    
+    }
+
+    if ((vale)){
+      console.log('Datos ingresados!!')
+      }else{
       console.log(msgError)
+      }   
+    }
+  }
   }
 }
-  
-  const formulario = document.querySelector('#formEnvio');
+  // querySelector  
+
+  const formulario = document.querySelector('button');
   let mensaje = document.querySelector('#rtaForm');
   
-  formulario.addEventListener('submit', evento => {
-             validaEmail();
-      evento.preventDefault();
+  formulario.addEventListener('click', evento => {
+    validarForm(); 
+    evento.preventDefault();
   })
+  console.log('fin');
 
 
-// const form = document.querySelector('#formEnvio');
-// const span_cb = document.getElementById('cb_validation');
-// let mensaje = document.querySelector('#rtaForm');
 
-// form.addEventListener('submit', e => {
-//   const cb = document.querySelectorAll('#intereses label input:checked');
-//   if(cb.length < 2){
-//     span_cb.innerHTML = `Se requiere un mínimo de 2 elementos, has elegido ${cb.length}`;
-//     e.preventDefault( );
-//   }
-// })
 
