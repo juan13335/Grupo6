@@ -22,18 +22,28 @@ body {
 	border-color: black;
 	background-color: #111a35;
 	color:aliceblue;
-	padding:2%;
+	/* padding:1%; */
 }
 
 
 .h2-nav {
 	font-size: 20px;
+	padding: 2%;
 }
 
 .nav li {
 	display: inline-block;
 	padding: 0 20px;
 	position: relative;
+}
+
+
+header nav ul li a{
+	padding: 8px;
+}
+
+header nav ul li a:hover{
+	background-color: #e2e2e2;
 }
 
 .nav a {
@@ -45,7 +55,7 @@ body {
 }
 
 .nav a:hover {
-	color: red;
+	color: rgb(64, 0, 255);
 }
 
 .nav li:hover ul {
@@ -135,6 +145,12 @@ body {
 	grid-area: noticia3;
 }
 
+/* ERROR */
+
+.bsod-container{
+	padding: 3%;
+
+}
 
 /* CAROUSEL */
 .carousel {
@@ -324,14 +340,21 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-    /*header { Anterior NAV
-        height: 5.5rem;
-		display: flex;
-        justify-content: space-between;
-		position:relative;
+    /* header nav { 
+		width: 80%;
+		height: 100%;
+		margin: 0;
+		position:fixed;
 		padding: 5%;
-    }*/
+		left: -100%;
+    } */
 
+	/* header nav ul li{
+		display: block;
+		float: none;
+	} */
+
+	
 	.nav-public {
 		padding: 3%;
 	}
@@ -405,12 +428,14 @@ body {
 	}
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px and up) 
 @media only screen and (min-width: 992px) {
+    header {
+        height: 5.5rem;
+    } 
     /*header { 
         height: 5.5rem; Pienso que no es necesario
     }*/ 
-}
 
 /* PAGINA CONTACTO */
 form > h2{
