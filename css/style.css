@@ -279,7 +279,22 @@ header nav ul li a:hover{
 
 .nav-public{
 	background-color: #111a35;
-	padding: 1%;
+	padding: 2%;
+}
+
+.nav-public-deporte {
+	background-color: #111a35;
+	padding: 2%;
+}
+
+.nav-public-deporte a {
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.nav-public-deporte a:hover {
+	color: red;
 }
 
 .nav-public a{
