@@ -27,6 +27,7 @@ showSlides();
 setInterval(nextSlide, 3000); // Cambia la imagen cada 3 segundos
 
 // contacto.html
+console.log('inicio')
 function validarForm(){
   let nombre = document.querySelector('#nombre').value;
   let apellido = document.querySelector('#apellido').value;

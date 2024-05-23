@@ -438,10 +438,14 @@ header nav ul li a:hover{
     }*/ 
 
 /* PAGINA CONTACTO */
+form {
+	background-image: url(../img/pxfuel.jpg);
+}
+
 form > h2{
 	text-align:center;
-	text-shadow: 5px 2px 1px #ffffff;
-	font-size: 2.5em;
+	text-shadow: 3px 1px 2px #ffffff;
+	font-size: 3.2em;
 	padding:2%;
 }
 
@@ -465,7 +469,8 @@ form > h2{
 .form-input > label{
 	display: block;
 	font-weight: bold;
-	font-size:2em;
+	font-size:2.2em;
+	text-shadow: 2px 1px 2px #ffffff;
 }
 
 .form-input > input, select{
@@ -483,9 +488,10 @@ form > h2{
 
 .form-check legend  {
 	margin:0px 0px 10px 2px;	
-	font-size: 2em;
+	font-size: 2.2em;
+	text-shadow: 2px 1px 2px #ffffff;
 	font-weight: bold;
-	}
+}
 
 .form-check > label {
 	margin:3px;
@@ -494,8 +500,10 @@ form > h2{
 }
 
 .form-msg{	
-	font-size:1.5em;
-	margin:20px 0px 10px 2px;
+	font-size:2em;
+	font-weight: bold;
+	text-shadow: 2px 1px 2px #ffffff;
+	margin:35px 0px 10px 2px;
 }
 
 textarea{
@@ -507,7 +515,7 @@ textarea{
 
 .row button{
 	margin-bottom: 20px;
-	font-size:1.6em;
+	font-size:1.8em;
 	font-weight: bold;
 	padding: 0.2em 0.2em;
 	box-shadow: 2px 2px 1px #000;
@@ -537,10 +545,10 @@ textarea{
 		.form-check legend{
 			font-size: 1.5em;		
 		}
-	.form-check > input {
+		.form-check > input {
 		justify-content:space-evenly;		
 		font-size:0.6m;
-		}
+	}
 }	
 
 /* Teléfonos */
@@ -559,12 +567,13 @@ textarea{
 	}
 
 	.form-check > legend{
-		font-size:1.2em;		
+		font-size:1.8em;		
 	}
 	
 	.form-check{
 		justify-content: center;		
-		font-size:0.8em;		
+		font-size:1em;		
+		font-weight: bold;
 	}
 }
 
