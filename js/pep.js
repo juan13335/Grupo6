@@ -6,7 +6,6 @@ function validarForm(){
   let email = document.querySelector('#email').value;
 
   let soloPalabras = /^[a-z\s]+$/i; // Expresion regular
-
   let correo= /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 
   let vale=true //prueba  
@@ -29,7 +28,7 @@ function validarForm(){
 //   if(email === ""){
     if (!correo.test(email)) {
     vale=false; 
-    msgError += 'apellido'
+    msgError += 'email'
   
   }
 
