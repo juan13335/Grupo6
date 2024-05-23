@@ -55,7 +55,7 @@ function validarForm(){
   }
 
   if(email === ""){
-    if (!corre.test(email)) {
+    if (!correo.test(email)) {
     vale=false; 
     msgError += 'apellido'
   
