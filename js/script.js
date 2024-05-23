@@ -57,7 +57,7 @@ setInterval(nextSlide, 3000); // Cambia la imagen cada 3 segundos
 //   if(email === ""){
 //     if (!correo.test(email)) {
 //     vale=false; 
-//     msgError += 'apellido'
+//     msgError += 'email'
   
 //   }
 
