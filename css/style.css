@@ -600,9 +600,9 @@ form > h2{
     margin:3px;
     font-size:1.8em;
     font-weight: bold;
-	/* text-shadow: 2px 1px 2px #ffffff; */
+	text-shadow: 2px 1px 2px #ffffff;
 	padding:3px;
-}
+	}
 
 .form-msg{  
     font-size:2em;
