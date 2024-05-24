@@ -660,7 +660,7 @@ textarea{
         flex-direction: column;
         margin-left: 40px;
         margin-right: 40px;
-        background-color: #92a2fc;
+        /* background-color: #92a2fc; */
         text-align:left;
         font-size:0.8em;
         }
