@@ -616,6 +616,7 @@ textarea{
     justify-content:center;
     resize:none;
     height: 100px;
+	margin-top: 2%;
 	
 }
 
@@ -678,5 +679,10 @@ textarea{
         font-size:1em;      
         font-weight: bold;
     }
+
+	.form-msg{
+		color: #0a0a0b;
+		text-shadow: 1px #ffffff;
+	}
 }
 
