@@ -1,5 +1,5 @@
 // contacto.html
-console.log('inicio')
+// console.log('inicio')
 function validarForm(){
   let nombre = document.querySelector('#nombre').value;
   let apellido = document.querySelector('#apellido').value;
@@ -11,7 +11,6 @@ function validarForm(){
   let vale=true //prueba  
   let msgError= 'Datos Incorrecto:  ';
 
-//    Campos de texto
 //   if(nombre === ''){
     if (!soloPalabras.test(nombre)) {
     vale=false; 
@@ -35,19 +34,19 @@ function validarForm(){
   if ((vale)){
     console.log('Datos ingresados!!')
     }else{
-    console.log(msgError)
+        console.log(msgError)
     }   
   }
 // }
 // }
 // }
-// querySelector  
 
-const formulario = document.querySelector('button');
+// querySelector  
+const formulario = document.querySelector('#botonValidar');
 let mensaje = document.querySelector('#rtaForm');
 
 formulario.addEventListener('click', evento => {
   validarForm(); 
   evento.preventDefault();
 })
-console.log('fin');
+// console.log('fin');

@@ -541,7 +541,8 @@ body {
 
 /* PAGINA CONTACTO */
 form {
-    background-image: url(../img/pxfuel.jpg);
+    background-image: url(/img/fondo-globo.jpg);
+	margin:3%;
 }
 
 form > h2{
@@ -598,7 +599,9 @@ form > h2{
 .form-check > label {
     margin:3px;
     font-size:1.8em;
-    padding: 2px;
+    font-weight: bold;
+	/* text-shadow: 2px 1px 2px #ffffff; */
+	padding:3px;
 }
 
 .form-msg{  
@@ -613,6 +616,7 @@ textarea{
     justify-content:center;
     resize:none;
     height: 100px;
+	
 }
 
 .row button{
@@ -630,24 +634,19 @@ textarea{
 }
 
 /* Escritorio grande */
-@media only screen and (min-width: 992px) and (max-width: 1199px){
-
-
-
+/* @media only screen and (min-width: 992px) and (max-width: 1199px){   
 	
-    
-	
-}
+} */
 
 /* Tablets y phablets */
 @media screen and (max-width:601px) and (max-width: 991px){
     .row{
         flex-direction:column;
         text-align:center;
-        font-size: 1em;
+        font-size: 1.2em;
         }
         .form-check legend{
-            font-size: 1.5em;       
+            font-size: 1.8em;       
         }
         .form-check > input {
         justify-content:space-evenly;       
@@ -663,15 +662,15 @@ textarea{
         margin-right: 40px;
         background-color: #92a2fc;
         text-align:left;
-        font-size: 0.8em;
+        font-size:0.8em;
         }
 
     .form-h2{
-        text-shadow: 2px 1px 1px #40f3db;
+        text-shadow: 2px 1px 1px #ced8d7;
     }
 
     .form-check > legend{
-        font-size:1.8em;        
+        font-size:1.6em;        
     }
     
     .form-check{
